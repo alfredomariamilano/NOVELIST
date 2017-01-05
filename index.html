@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app='noveList'>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>N O V E L I S T</title>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/app.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen">
+  <base href="/" />
+</head>
+<body ng-controller="mainCtrl as main">
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a ui-sref="home" class="navbar-brand" href="#">Novelist</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li ng-if="!main.user">
+              <a ui-sref="register">Register</a>
+            </li>
+            <li ng-if="!main.user">
+              <a ui-sref="login">Login</a>
+            </li>
+            <li ng-if="main.user">
+              <a ui-sref="novelIndex">Novels</a>
+            </li>
+            <li ng-if="main.user"><a ui-sref="usersShow({ id: main.user.id })" href="#">My Profile</a></li>
+            <li role="separator" class="divider"></li>
+            <li ng-if="main.user"><a ng-click="main.logout()" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main ui-view></main>
+  <!-- <div class="footer">
+  <div class="container">
+  <hr class="hidden-sm-down">
+  <p class="left">Contact Us<br />Say Hello</p>
+  <p class="right">Connect<br />Social Media Links</p>
+  <p class="centered">Visit Us<br />Address: The Relay Building, 1 Commercial Street, London E1 7PT</p>
+</div>
+</div> -->
+</body>
+</html>

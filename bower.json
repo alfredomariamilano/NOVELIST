@@ -1,0 +1,39 @@
+{
+  "name": "novelist",
+  "description": "An app of group-written novels.",
+  "main": "server.js",
+  "authors": [
+    "Alfredo Maria Milano",
+    "Alicia Pearse",
+    "Ajay Lard",
+    "Sam Younger"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Amazing"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.7",
+    "angular-ui-router": "~0.3.1",
+    "angular-resource": "~1.5.7",
+    "angular-jwt": "^0.0.9",
+    "bootstrap": "^3.3.7",
+    "angular-messages": "^1.5.8",
+    "jquery": "^3.1.1",
+    "angular-contenteditable": "^0.3.8",
+    "angular-moment": "^0.10.3",
+    "angular-socialshare": "angularjs-socialshare#^2.3.1"
+  },
+  "resolutions": {
+    "angular": "1.5.8"
+  }
+}
