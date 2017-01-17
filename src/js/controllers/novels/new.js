@@ -34,7 +34,7 @@ function NovelNewCtrl(Novel, $state, RandomImage){
     .$promise
     .then(data => {
       console.log(data);
-      $state.go('novelShow',{"id":data.novel._id});
+      $state.go('novelShow', {"id":data.novel._id});
     });
   };
 }
