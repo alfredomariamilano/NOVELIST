@@ -1,5 +1,5 @@
 angular
-  .module("noveList")
+  .module("theNovelists")
   .factory("Novel", Novel);
 
 Novel.$inject = ["$resource", "API"];

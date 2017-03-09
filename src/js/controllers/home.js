@@ -1,5 +1,5 @@
 angular
-  .module("noveList")
+  .module("theNovelists")
   .controller("homeCtrl", homeCtrl);
 
 homeCtrl.$inject = ["CurrentUserService", "$state"];

@@ -1,5 +1,5 @@
 angular
-  .module("noveList")
+  .module("theNovelists")
   .controller("registerCtrl", registerCtrl);
 
 registerCtrl.$inject = ["User", "CurrentUserService"];

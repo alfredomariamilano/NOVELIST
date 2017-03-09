@@ -1,5 +1,5 @@
 angular
-  .module("noveList")
+  .module("theNovelists")
   .service("CurrentUserService", CurrentUserService);
 
 CurrentUserService.$inject = ["$rootScope", "TokenService"];

@@ -1,5 +1,5 @@
 angular
-.module("noveList")
+.module("theNovelists")
 .controller("usersIndexCtrl", usersIndexCtrl);
 
 usersIndexCtrl.$inject = ["User"];

@@ -1,5 +1,5 @@
 angular
-.module("noveList")
+.module("theNovelists")
 .factory("RandomImage", RandomImage);
 
 RandomImage.$inject = ["$resource"];

@@ -1,5 +1,5 @@
 angular
-.module("noveList")
+.module("theNovelists")
 .config(SetupInterceptor);
 
 SetupInterceptor.$inject = ['$httpProvider'];

@@ -1,5 +1,5 @@
 angular
-.module("noveList")
+.module("theNovelists")
 .controller("NovelEditCtrl", NovelEditCtrl);
 
 NovelEditCtrl.$inject = ["Novel", "$stateParams", "$state"];

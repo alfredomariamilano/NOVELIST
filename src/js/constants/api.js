@@ -1,3 +1,3 @@
 angular
-  .module("noveList")
+  .module("theNovelists")
   .constant("API", `${window.location.origin}/api`);

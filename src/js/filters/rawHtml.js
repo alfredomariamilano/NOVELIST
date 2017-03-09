@@ -1,5 +1,5 @@
 angular
-  .module("noveList")
+  .module("theNovelists")
   .filter('rawHtml', rawHtml);
 
 rawHtml.$inject = ['$sce'];

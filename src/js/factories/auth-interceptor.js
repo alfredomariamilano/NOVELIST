@@ -1,5 +1,5 @@
 angular
-.module("noveList")
+.module("theNovelists")
 .factory("AuthInterceptor", AuthInterceptor);
 
 AuthInterceptor.$inject = ['API', 'TokenService'];

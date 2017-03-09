@@ -1,5 +1,5 @@
 angular
-  .module("noveList")
+  .module("theNovelists")
   .service("TokenService", TokenService);
 
 TokenService.$inject = ["$window", "jwtHelper"];

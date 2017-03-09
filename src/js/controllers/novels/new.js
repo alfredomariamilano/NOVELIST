@@ -1,5 +1,5 @@
 angular
-.module("noveList")
+.module("theNovelists")
 .controller("NovelNewCtrl", NovelNewCtrl);
 
 NovelNewCtrl.$inject = ["Novel", "$state", 'RandomImage'];

@@ -1,5 +1,5 @@
 angular
-.module('noveList', [
+.module('theNovelists', [
   'ui.router',
   'ngResource',
   'angular-jwt',
@@ -10,7 +10,7 @@ angular
 ]);
 
 angular
-.module('noveList').directive('onErrorSrc', function() {
+.module('theNovelists').directive('onErrorSrc', function() {
   return {
     link: function(scope, element, attrs) {
       element.bind('error', function() {

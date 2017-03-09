@@ -1,5 +1,5 @@
 angular
-.module("noveList")
+.module("theNovelists")
 .controller("mainCtrl", mainCtrl);
 
 mainCtrl.$inject = ["$rootScope", "CurrentUserService", "$state", 'RandomImage'];
